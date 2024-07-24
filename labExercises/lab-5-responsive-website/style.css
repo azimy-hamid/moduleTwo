@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+/* .navbar {
+  background-color: rgb(245 236 230);
+} */
+
+.bg-main {
+  background-color: rgb(245 236 230);
+}
+
+.logo {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: #1d4ed8;
+  margin: auto 5px;
+}
+
+.container {
+  background-color: rgba(230, 219, 207, 1);
+}
+
+@media (min-width: 992px) {
+  .hero-main-header {
+    background-color: rgba(230, 219, 207, 1);
+    height: 100vh;
+  }
+}
+
+.first-container {
+  position: relative;
+  background-color: rgba(230, 219, 207, 1);
+}
+
+@media (min-width: 300px) {
+  .feature-card {
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .second-container {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.second-container {
+  background-color: #fff;
+}
+
+.second-container-content {
+  margin-left: 20%;
+}
+
+.feature-card {
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: rgb(245 236 230);
+  height: 400px;
+  width: 270px;
+  border-radius: 10px;
+}
+
+@media (min-width: 1300px) {
+  .feature-card {
+    margin-left: 20rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.feature-card-photo {
+  width: 130px;
+  border-radius: 50%;
+  margin-top: 15%;
+}
+
+.line {
+  height: 2px;
+  width: 80px;
+  background-color: #1d4ed8;
+}
+
+.feature-card-socials {
+  position: absolute;
+  margin-top: auto;
+  bottom: 10px;
+  height: 50px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.feature-card-socials-img {
+  width: 20px;
+  height: 20px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #1d4ed8;
+  padding: 4px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease-out;
+}
+
+.hero-btn:hover {
+  background-color: #fff;
+  color: #1d4ed8;
+  box-shadow: inset 0 0 0 2px #1d4ed8;
+}
+
+.hero-paragraph {
+  margin-top: 30px;
+}
+
+.footer-write > p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-write > a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-call > p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-follow-us {
+  display: block;
+}

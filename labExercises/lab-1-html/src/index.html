@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab One - Module 2</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="A simple website for practicing HTML." />
+    <meta
+      name="keywords"
+      content="HTML practice, HTML tutorial, learn HTML, HTML examples, HTML basics, web development, HTML tags, HTML coding, HTML exercises, beginner HTML"
+    />
+    <meta name="author" content="Your Name" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="./index.html">Home</a>
+        <a href="./form.html">Form</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>My HTML learning journey</h1>
+
+      <article>
+        <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+
+        <p>p represents paragraph without preserving spacing</p>
+        <pre>
+Text in         a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+        </pre>
+
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+
+        <ol>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>
+            Third item
+            <ul>
+              <li>Nested item 1</li>
+              <li>Nested item 2</li>
+            </ul>
+          </li>
+        </ol>
+      </article>
+
+      <article>
+        <h2>Learning about HTML tables</h2>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">First header</th>
+              <th>Third header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>First cell - first row</td>
+              <td>Second cell - first row</td>
+              <td>Third cell - first row</td>
+            </tr>
+            <tr>
+              <td rowspan="2">First cell - second row</td>
+              <td>Second cell - second row</td>
+              <td>Third cell - second row</td>
+            </tr>
+            <tr>
+              <td>Second cell - third row</td>
+              <td>Third cell - third row</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h2>Adding Images, Video, and Audio</h2>
+
+        <img
+          src="https://picsum.photos/400/400"
+          alt="Sample Image from Picsum"
+          width="400"
+          height="400"
+        />
+
+        <img
+          src="./assets/html_lab_image.jpg"
+          alt="Lab Image"
+          width="400"
+          height="400"
+        />
+
+        <video controls width="250">
+          <source src="./assets/flower.webm" type="video/webm" />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+
+        <figure>
+          <audio controls src="./assets/t-rex-roar.mp3">
+            Your browser does not support the <code>audio</code> element.
+          </audio>
+          <figcaption>Audio of a T-Rex Roar</figcaption>
+        </figure>
+
+        <!-- Uncomment the following for autoplay without controls -->
+
+        <!-- <video autoplay width="250">
+            <source src="./assets/flower.webm" type="video/webm">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+
+        <figure>
+            <audio autoplay src="./assets/t-rex-roar.mp3">
+                Your browser does not support the <code>audio</code> element.
+            </audio>
+            <figcaption>Audio of a T-Rex Roar</figcaption>
+        </figure> -->
+      </article>
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="./index.html">Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Adding a Form</h2>
+      <form method="POST" action="http://localhost:3000/profile">
+        <div>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" />
+        </div>
+        <div>
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" />
+        </div>
+
+        <div>
+          <p>Select your favorite coding language:</p>
+          <label for="html">
+            <input type="radio" id="html" name="codingLanguage" value="HTML" />
+            HTML
+          </label>
+          <label for="css">
+            <input type="radio" id="css" name="codingLanguage" value="CSS" />
+            CSS
+          </label>
+          <label for="javascript">
+            <input
+              type="radio"
+              id="javascript"
+              name="codingLanguage"
+              value="JavaScript"
+            />
+            JavaScript
+          </label>
+        </div>
+
+        <div>
+          <p>Select the types of vehicles you own:</p>
+          <label for="car">
+            <input type="checkbox" id="car" name="vehicle" value="Car" />
+            Car
+          </label>
+          <label for="bike">
+            <input type="checkbox" id="bike" name="vehicle" value="Bike" />
+            Bike
+          </label>
+          <label for="boat">
+            <input type="checkbox" id="boat" name="vehicle" value="Boat" />
+            Boat
+          </label>
+        </div>
+
+        <div>
+          <label for="carBrand">Choose your car brand:</label>
+          <select id="carBrand" name="carBrand">
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes">Mercedes</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit form</button>
+      </form>
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
+</html>

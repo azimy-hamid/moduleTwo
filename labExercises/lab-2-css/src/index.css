@@ -1,0 +1,171 @@
+/* I. Selectors */
+/* ----- Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+/* 1.1 Using the type selector */
+article {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+/* 1.2 Using a class selector */
+.style-me1 {
+  color: red;
+}
+
+/* 1.3 Using an id selector */
+#style-me2 {
+  color: blue;
+}
+
+/* 1.4 Using a specific selector */
+#style-me2.style-me1 {
+  color: purple;
+}
+
+/* ----- Put styles for questions 2.1 and 2.2 here */
+
+/* 2.1 Direct <p> children are styled */
+.my-children-are-styled > p {
+  color: green;
+  background-color: lightgreen;
+}
+
+/* 2.2 All descendants <p> are styled */
+.my-descendants-are-styled p {
+  color: orange;
+  background-color: red;
+}
+
+/* ----- II. Box model and common properties */
+/* ----- Put styles for questions 1-8 here */
+
+/* Question 1, 3, 4, 5, 6, 7 and 8: */
+.box {
+  background-color: brown;
+  margin: 10px 20px 30px 40px;
+  padding: 10px 20px;
+  border: 10px solid black;
+  box-sizing: border-box;
+  overflow: auto;
+  outline: 10px solid black;
+  border-radius: 50%;
+  padding: 20px;
+  background: url("../assets/images/img1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Question 2: */
+
+.box:nth-of-type(1) {
+  width: 200px;
+  height: 100px;
+}
+
+.box:nth-of-type(2) {
+  width: 50%;
+  height: 10rem;
+}
+
+.box:nth-of-type(3) {
+  width: 50vw;
+  height: 50vh !important;
+}
+
+/* ---- III. Positioning */
+/* ---- Put styles for questions 1-3 here */
+/* Question: 1 */
+.position-absolute {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+  background-color: brown;
+}
+
+/* Question: 2 */
+.position-relative {
+  position: relative;
+  top: 0;
+  background-color: red;
+}
+
+/* Question: 3 */
+.position-sticky {
+  position: sticky;
+  top: 50px;
+  background-color: blue;
+}
+
+/* ---- IV. Styling text */
+/* ---- Put styles for questions 1-10 here */
+/* Question 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 */
+.text-style {
+  color: green;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: "Dancing Script", sans-serif;
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+
+/* ---- V. Styling links */
+/* ---- Put styles for questions 1-3 here */
+/* Question 1, 2, 3 */
+a,
+a:link {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: purple;
+}
+
+a:focus {
+  text-decoration: line-through;
+  color: blue;
+}
+
+a:active {
+  text-decoration: none;
+  color: red;
+}
+
+a:visited {
+  text-decoration: wavy;
+  color: lightskyblue;
+}
+
+/* ---- VI. calc() */
+/* ---- Put styles for questions 1-3 here */
+
+.calc-style {
+  background-color: aqua;
+  width: calc(100vw - 100px);
+}
+
+/* IMPORTANT: I USED FLEXBOX BECAUSE WHEN I FOLLOW THE INSTRUCTIONS GIVEN IN THE LAB EXERCISE,
+.fixed-width-col AND .fluid-col DIDN'T APPEAR SIDE BY SIDE */
+.calc-row {
+  display: flex;
+}
+
+.fixed-width-col {
+  display: inline-block;
+  background-color: rebeccapurple;
+  width: 350px;
+}
+
+.fluid-col {
+    display: inline-block;
+    background-color: antiquewhite;
+    width: calc(100vw - 350px);
+}
